@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&display=swap');
+:root{
+    --bg: #E4E9F7;
+    --txt: black;
+    --neu: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+    --neuuu:   -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12),
+  inset -10px -10px 15px rgba(255,255,255,0.5),
+  inset  10px 10px 15px rgba(70,70,70,0.12); 
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: var(--bg);
+    transition: .35s;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.dark-theme{
+    --bg: #18191A;
+    --txt: white;
+    --neu: -5px -5px 10px rgba(255,255,255,0.05),
+    5px 5px 15px rgba(0,0,0,0.5);
+--neuuu: -5px -5px 10px rgba(255,255,255,0.05),
+     5px 5px 15px rgba(0,0,0,0.5),
+    inset -5px -5px 10px rgba(255,255,255,0.05),
+    inset 5px 5px 15px rgba(0,0,0,0.5);
+transition: 0.35s;
+}
+.mooon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: all 0.35s;
+}
+.mooon:hover{
+    transform: rotate(45deg);
+    transition: all 0.35s;
+}
+.profil{
+    width: 7rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+.profil i {
+    background: rgba(0,0,0,0.4);
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .35s;
+}
+.profil:hover i {
+    opacity: 1;
+    transition: .35s;
+    cursor: pointer;
+}
+.profil img{
+    width: 7rem;
+    border-radius: 50%;
+    box-shadow: var(--neu);
+    transition: all 0.35s;
+}
+.profil img:hover {
+    cursor: pointer;
+    transition: all 0.35s;
+}
+.nama{
+    text-align: center;
+    color: pink;
+    transition: .35s;
+}
+.nama span{
+    color: var(--txt);
+    margin-left: 0.3rem;
+    transition: .35s;
+}
+.nama p{
+    color: var(--txt);
+    transition: .35s;
+}
+.sosmed{
+    display: flex;
+    justify-content: center;
+}
+.sosmed a i{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in .25s;
+    color: var(--txt);
+    margin-bottom: 1rem;
+    transition: all 0.35s;
+}
+.sosmed a i:hover{
+    transform: scale(110%);
+    transition: all 0.35s;
+}
+.kontak{
+    display: flex;
+    justify-content: center;
+}
+.kontak .kiri .btn-down{
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: var(--neu);
+    height: 2rem;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+    color: var(--txt);
+    transition: all 0.35s;
+    margin-top: -0.5rem;
+   
+}
+.modal{
+    position: fixed;
+    width: 100%;
+    max-width: 600px;
+    min-height: 100vh;
+    display: none;
+    transition: .35s;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    z-index: 10;
+}
+.modal img{
+    border-radius: 50%;
+}
+.kontak .kiri i{
+    margin-right: 0.3rem;
+}
+.kontak .kiri .btn-down:hover{
+    transform: scale(95%);
+    box-shadow: var(--neuuu);
+    transition: all 0.35s;
+}
+.konteen{
+    width: 100%;
+    height: auto;
+    margin-top: 0 auto;
+    justify-content: center;
+  }
+    .wadah{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      border-radius: 0.3rem;
+      width: 12.5rem;
+      height: 3rem;
+      align-items: center;
+      transition: .35s;
+  }
+  .btn-kri{
+      box-shadow: var(--neu);
+      margin: 0.2rem;
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.3rem;
+      cursor: pointer;
+      color: var(--txt);
+      transition: .35s;
+      border: none;
+      background-color: var(--neu);
+  }
+  .btn-kri:hover{
+    transform: scale(95%);
+    transition: .35s;
+    background-color: var(--neuuu);
+    box-shadow: var(--neuuu);
+  }
+  .btn-kn:hover{
+      transform: scale(95%);
+      transition: .35s;
+      background-color: var(--neuuu);
+      box-shadow: var(--neuuu);
+  }
+  .btn-kn{
+      box-shadow: var(--neu);
+      margin: 0.2rem;
+      background-color: var(--neu);
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.3rem;
+      cursor: pointer;
+      color: var(--txt);
+      transition: .35s;
+      border: none;
+  }
+  .card{
+    margin-top: 1rem;
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    transition: .35s;
+    justify-content: center;
+    color: var(--txt);
+}
+.cardd{
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: .35s;
+    display: none;
+    justify-content: center;
+    color: var(--txt);
+}
+.card h3{
+    margin-bottom: .5rem;
+    justify-content: center;
+    display: flex;
+}
+.card p{
+    text-align: center;
+    display: flex;
+}
+.cardd h3{
+    justify-content: center;
+    display: flex;
+}
+.cardd p{
+    text-align: center;
+    display: flex;
+}
+.cardd .batassss{
+    left: 0;
+    margin-top: 1rem;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.copy{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.copy h5{
+    font-family: 'Kalam', cursive;
+}
+.title{
+    margin-bottom: 1rem;
+}
+.cardd .servis{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: var(--neu);
+}
+.cardd .servis .illust{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.cardd .servis .illust i{
+    width: 8rem;
+    margin-right: -1.7rem;
+}
+.cardd .servis .edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.cardd .servis .edit i {
+    width: 8rem;
+    margin-right: -2.1rem;
+}
+.cardd .servis .tiktod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.cardd .servis .tiktod i{
+    width: 8rem;
+    margin-right: -2rem;
+}
+.cardd .servis .igg{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.cardd .servis .igg i{
+    width: 8rem;
+    margin-right: -2rem;
+}
+.copy{
+    color: var(--txt);
+}
+#nightText i {
+    font-size: 1.5rem;
+}
