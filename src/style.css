@@ -8,6 +8,7 @@
     10px 10px 15px rgba(70,70,70,0.12),
   inset -10px -10px 15px rgba(255,255,255,0.5),
   inset  10px 10px 15px rgba(70,70,70,0.12); 
+    --txticon: white;
   }
 
 *{
@@ -39,6 +40,7 @@ body{
      5px 5px 15px rgba(0,0,0,0.5),
     inset -5px -5px 10px rgba(255,255,255,0.05),
     inset 5px 5px 15px rgba(0,0,0,0.5);
+    --txticon: black;
 transition: 0.35s;
 }
 .mooon{
@@ -358,5 +360,5 @@ transition: 0.35s;
     left: 0.6rem;
     font-size: .7rem;
     top: 1rem;
-    color: var(--bg);
+    color: var(--txticon);
 }
