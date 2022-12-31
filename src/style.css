@@ -148,7 +148,7 @@ transition: 0.35s;
     position: fixed;
     width: 100%;
     max-width: 600px;
-    min-height: 100vh;
+    height: 100vh;
     display: none;
     transition: .35s;
     opacity: 0;
