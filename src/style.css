@@ -358,5 +358,5 @@ transition: 0.35s;
     left: 0.6rem;
     font-size: .7rem;
     top: 1rem;
-    color: var(--txt);
+    color: var(--bg);
 }
